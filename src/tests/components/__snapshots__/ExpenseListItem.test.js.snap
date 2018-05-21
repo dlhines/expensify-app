@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render snapshot ExpenseListItem with array data 1`] = `
+<div>
+  <h3>
+    <Link
+      replace={false}
+      to="/edit/1"
+    >
+      Goober
+    </Link>
+  </h3>
+  <p>
+    1095
+     | 
+    0
+  </p>
+</div>
+`;
