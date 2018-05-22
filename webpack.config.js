@@ -8,7 +8,7 @@ module.exports = (env) =>  {
     return {
         entry:'./src/app.js',
         output: {
-            path: path.join(__dirname, 'public'),
+            path: path.join(__dirname, 'public', 'dist'),
             filename: 'bundle.js'
         },
         module: {
@@ -42,33 +42,8 @@ module.exports = (env) =>  {
         devtool: isProduction ? 'source-map' : 'inline-source-map',
         devServer: {
             contentBase: path.join(__dirname, 'public'),
-            historyApiFallback: true // This is for react-router-dom. It tells rrd to use / as a prefix for all pages
+            historyApiFallback: true, // This is for react-router-dom. It tells rrd to use / as a prefix for all pages
+            publicPath: '/dist/'
         }
     }
 };
-// module.exports = {
-//     entry:'./src/app.js',
-//     output: {
-//         path: path.join(__dirname, 'public'),
-//         filename: 'bundle.js'
-//     },
-//     module: {
-//         rules: [{
-//             loader: 'babel-loader',
-//             test: /\.js$/,
-//             exclude: /node_modules/,
-//         },{
-//             test:/\.s?css$/,
-//             use: [
-//                 'style-loader',
-//                 'css-loader',
-//                 'sass-loader',
-//             ]
-//         }]
-//     },
-//     devtool: "cheap-module-source-map",
-//     devServer: {
-//         contentBase: path.join(__dirname, 'public'),
-//         historyApiFallback: true // This is for react-router-dom. It tells rrd to use / as a prefix for all pages
-//     }
-// };
