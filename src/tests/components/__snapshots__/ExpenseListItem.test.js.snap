@@ -11,9 +11,9 @@ exports[`should render snapshot ExpenseListItem with array data 1`] = `
     </Link>
   </h3>
   <p>
-    1095
-     | 
-    0
+    $10.95
+     - 
+    December 31st, 1969
   </p>
 </div>
 `;
