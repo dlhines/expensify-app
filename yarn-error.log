@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/bin/node /usr/bin/yarn test
+  /usr/bin/node /usr/bin/yarn test -u
 
 PATH: 
   /home/admin-daniel/bin:/home/admin-daniel/.local/bin:/home/admin-daniel/bin:/home/admin-daniel/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-9-oracle/bin:/usr/lib/jvm/java-9-oracle/db/bin:/usr/lib/jvm/java-9-oracle/bin:/usr/lib/jvm/java-9-oracle/db/bin
@@ -39,6 +39,7 @@ npm manifest:
       "express": "4.15.4",
       "extract-text-webpack-plugin": "3.0.0",
       "firebase": "4.2.0",
+      "history": "4.7.2",
       "moment": "2.18.1",
       "node-sass": "4.5.3",
       "normalize.css": "7.0.0",
@@ -2829,7 +2830,7 @@ Lockfile:
       inherits "^2.0.3"
       minimalistic-assert "^1.0.0"
   
-  history@^4.7.2:
+  history@4.7.2, history@^4.7.2:
     version "4.7.2"
     resolved "https://registry.yarnpkg.com/history/-/history-4.7.2.tgz#22b5c7f31633c5b8021c7f4a8a954ac139ee8d5b"
     dependencies:
@@ -6589,9 +6590,9 @@ Lockfile:
 
 Trace: 
   Error: Command failed.
-  Exit code: 1
+  Exit signal: SIGHUP
   Command: sh
-  Arguments: -c cross-env NODE_ENV=test jest --config=jest.config.json
+  Arguments: -c cross-env NODE_ENV=test jest --config=jest.config.json -u
   Directory: /home/admin-daniel/WORK_ENVIRONMENT/The Complete React Web Developer Course (with Redux)/react-course-projects/expensify-app
   Output:
   
