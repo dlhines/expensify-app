@@ -1,17 +1,30 @@
 Arguments: 
-  /usr/bin/node /usr/bin/yarn test -u
+  /usr/bin/node /home/admin-daniel/.yarn/bin/yarn.js add babel-polyfil@6.26.0
 
 PATH: 
-  /home/admin-daniel/bin:/home/admin-daniel/.local/bin:/home/admin-daniel/bin:/home/admin-daniel/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-9-oracle/bin:/usr/lib/jvm/java-9-oracle/db/bin:/usr/lib/jvm/java-9-oracle/bin:/usr/lib/jvm/java-9-oracle/db/bin
+  /home/admin-daniel/.yarn/bin:/home/admin-daniel/.config/yarn/global/node_modules/.bin:/home/admin-daniel/bin:/home/admin-daniel/.local/bin:/home/admin-daniel/.yarn/bin:/home/admin-daniel/.config/yarn/global/node_modules/.bin:/home/admin-daniel/bin:/home/admin-daniel/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-9-oracle/bin:/usr/lib/jvm/java-9-oracle/db/bin:/usr/lib/jvm/java-9-oracle/bin:/usr/lib/jvm/java-9-oracle/db/bin
 
 Yarn version: 
-  1.5.1
+  1.7.0
 
 Node version: 
   9.11.1
 
 Platform: 
   linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/babel-polyfil: Not found
+      at Request.params.callback [as _callback] (/home/admin-daniel/.yarn/lib/cli.js:65656:18)
+      at Request.self.callback (/home/admin-daniel/.yarn/lib/cli.js:134675:22)
+      at Request.emit (events.js:180:13)
+      at Request.<anonymous> (/home/admin-daniel/.yarn/lib/cli.js:135658:10)
+      at Request.emit (events.js:180:13)
+      at IncomingMessage.<anonymous> (/home/admin-daniel/.yarn/lib/cli.js:135578:12)
+      at Object.onceWrapper (events.js:272:13)
+      at IncomingMessage.emit (events.js:185:15)
+      at endReadableNT (_stream_readable.js:1106:12)
+      at process._tickCallback (internal/process/next_tick.js:178:19)
 
 npm manifest: 
   {
@@ -6587,18 +6600,3 @@ Lockfile:
       cliui "^2.1.0"
       decamelize "^1.0.0"
       window-size "0.1.0"
-
-Trace: 
-  Error: Command failed.
-  Exit signal: SIGHUP
-  Command: sh
-  Arguments: -c cross-env NODE_ENV=test jest --config=jest.config.json -u
-  Directory: /home/admin-daniel/WORK_ENVIRONMENT/The Complete React Web Developer Course (with Redux)/react-course-projects/expensify-app
-  Output:
-  
-      at ProcessTermError.MessageError (/usr/lib/node_modules/yarn/lib/cli.js:186:110)
-      at new ProcessTermError (/usr/lib/node_modules/yarn/lib/cli.js:226:113)
-      at ChildProcess.<anonymous> (/usr/lib/node_modules/yarn/lib/cli.js:30281:17)
-      at ChildProcess.emit (events.js:180:13)
-      at maybeClose (internal/child_process.js:936:16)
-      at Process.ChildProcess._handle.onexit (internal/child_process.js:220:5)

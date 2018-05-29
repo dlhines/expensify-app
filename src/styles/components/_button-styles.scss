@@ -1,0 +1,28 @@
+.box-layout__login_button {
+    color: #EEE;
+    background: lighten($buttonbg, 20%);
+    border: none;
+    font-size: $large;
+    padding: $s-size;
+}
+
+.button {
+    color: #EEE;
+    display: inline-block;
+    background: lighten($buttonbg, 20%);
+    border: none;
+    font-size: $large;
+    padding: $s-size;
+    text-decoration: none;
+    line-height: 1;  
+}
+
+.button--link {
+    background: none;
+    color: #FFF;
+}
+
+.button--secondary {
+    background: #888888;
+    color: #000;
+}

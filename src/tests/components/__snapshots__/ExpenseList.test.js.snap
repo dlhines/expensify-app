@@ -1,7 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render expenselist with expenses 1`] = `
-<div>
+<div
+  className="content-container"
+>
+  <div
+    className="list-header"
+  >
+    <div
+      className="show-for-mobile"
+    >
+      Expenses
+    </div>
+    <div
+      className="show-for-desktop"
+    >
+      Expense
+    </div>
+    <div
+      className="show-for-desktop"
+    >
+      Amount
+    </div>
+  </div>
   <ExpenseListItem
     amount={1095}
     createdAt={0}
@@ -30,9 +51,34 @@ exports[`should render expenselist with expenses 1`] = `
 `;
 
 exports[`should render expenselist without expenses (emtpy array) 1`] = `
-<div>
-  <p>
-    No Expenses
-  </p>
+<div
+  className="content-container"
+>
+  <div
+    className="list-header"
+  >
+    <div
+      className="show-for-mobile"
+    >
+      Expenses
+    </div>
+    <div
+      className="show-for-desktop"
+    >
+      Expense
+    </div>
+    <div
+      className="show-for-desktop"
+    >
+      Amount
+    </div>
+  </div>
+  <div
+    className="list-item list-item--message"
+  >
+    <span>
+      No Expenses
+    </span>
+  </div>
 </div>
 `;
